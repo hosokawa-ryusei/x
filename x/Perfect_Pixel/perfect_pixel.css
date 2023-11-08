@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    margin: 100px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background: #dcdcdc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box {
+    width: 320px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    line-height: 1.75em;
+    background: #163ded;
+    color: #fff;
+    padding: 5px;
+    margin: 0 0 10px;
+    font-weight: 600;
+}

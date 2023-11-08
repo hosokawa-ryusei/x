@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 16px;
+    resize: both;
+    overflow: hidden;
+    background: #d76969;
+    padding: 30px;
+    /*
+    ↓この要素の横幅を基準にする宣言として
+    container-type:;は要素の何を基準にするかを決めます。
+    【値】
+    normal:通常
+    inline-size:横幅のみを基準
+    size:横幅と縦幅を基準
+    */
+    container-type: inline-size;
+    /*
+    container-name:;で命名した名前を＠containerで
+    指定することで基準とする要素を指定できます。
+    */
+    container-name: container;
+}
+
+.sidebar {
+    background: #ee7447;
+    padding: 16px;
+}
+
+.content {
+    background: #ffec80;
+    padding: 16px;
+}
+
+/*
+コンテナクエリで今回は「.container」が500px以下になった時の
+「.sidebar」と「.content」のスタイルを指定しています。
+*/
+@container container (max-width: 500px) {
+    .sidebar {
+        background: #3851df;
+        color: #fff;
+    }
+    
+    .content {
+        background: #24a83e;
+        color: #fff;
+    }
+}

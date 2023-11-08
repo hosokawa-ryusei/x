@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* スモールビューポート高さ: svh */
+/* スマートフォンのアドレスバーが表示されている最小のビューポートの高さを基準にします。 */
+div {
+    display: grid;
+    place-items: center;
+}
+
+.example-svh {
+    height: 100svh;
+    background: rgb(4, 103, 4);
+}
+
+/* ラージビューポート高さ: lvh */
+/* アドレスバーが非表示のときの最大のビューポートの高さを基準にします。 */
+.example-lvh {
+    height: 100lvh;
+    background: rgb(150, 156, 28);
+}
+
+/* ダイナミックビューポート高さ: dvh */
+/* アドレスバーの表示状態を監視し動的に高さを変化させます。 */
+.example-dvh {
+    height: 100dvh;
+    background: rgb(138, 92, 5);
+}
+
+span {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}

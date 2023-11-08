@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+div {
+    padding: 100px 100px;
+}
+
+/* 
+全角の「」や、。などの記号に付いてる余白を削除する事ができる
+*/
+
+.palt {
+    padding: 20px 0 0 100px;
+    /* この一行追加するだけ！ */
+    font-feature-settings: 'palt';
+}

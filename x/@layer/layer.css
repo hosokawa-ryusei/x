@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* 基本のスタイル */
+div {
+    width: 100px;
+    height: 100px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 100px;
+}
+
+/* テキストのスタイルに白を当てています */
+p {
+    color: #fff;
+}
+
+/*
+ 下記の@layer内の記述自体は上記より詳細度は上ですが、
+ @layer外にあるスタイルの方が優先度は高くなる仕様なので、
+ こういった場合でもでもテキストの色は白が適用されます。
+*/
+@layer txt {
+    div.box p.txt {
+        color: red;
+    }
+}

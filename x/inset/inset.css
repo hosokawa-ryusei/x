@@ -1,0 +1,32 @@
+/* CSS */
+.container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #777;
+}
+
+.box {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+    color: #fff;
+    padding: 120px 0;
+    background: #3498db;
+    /* 
+    幅と高さを指定すると
+    単純に要素の配置の指定として使用できる 
+    */
+    width: 400px;
+    height: 400px;
+    /* 
+    positionは必須
+    */
+    position: absolute;
+    inset: 30px 180px 50px 90px; 
+    /*
+    上、右、下、左の順で位置を指定
+    今回でいえば右から80px、下から50pxの位置に配置されている
+    */
+}

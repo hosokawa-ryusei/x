@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.grid-container {
+    width: 800px;
+    height: 500px;
+    background: #555;
+    /*
+    下記のようによくあるflexboxを使用した方法だと
+    3行書かないといけない
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-content {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}

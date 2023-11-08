@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* ここは見なくて大丈夫です */
+.flex {
+    width: fit-content;
+    display: flex;
+    gap: 0 10%;
+    margin: 0 auto;
+}
+.object {
+    background: #898988;
+    height: 100px;
+    width: 100vw;
+}
+
+.box {
+    width: 300px;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: #da2020;
+    font-size: 20px;
+}
+
+.box.box2 {
+    background: #2048da;
+}
+/* ここは見なくて大丈夫です */
+
+
+
+
+/* よくある記述方法 */
+.box1 {
+    /* とりあえず同じ要素全てに同じだけ余白を持たせる */
+    margin: 0 auto 50px;
+}
+/* 
+そのあと最後の要素にのみ
+不要になった余白を取り除くための指定を別でしなければいけなくなる
+*/
+.box1:last-child {
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/* :notを使用した記述方法 */
+.box2:not(:last-child) {
+    margin: 0 auto 50px;
+}
